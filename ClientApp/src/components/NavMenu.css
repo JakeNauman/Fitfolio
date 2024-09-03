@@ -1,0 +1,72 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    word-break: break-all;
+}
+
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Ensure the navbar brand (FitFolio) stays on the left */
+.navbar-brand {
+    margin-right: auto;
+}
+
+/* Ensure the navbar items (links and search bar) are aligned to the right */
+.navbar-nav {
+    margin-left: auto;
+
+}
+
+/* Style the search results dropdown */
+.search-results {
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ced4da;
+    width: 100%;
+    max-width: 300px; /* Adjust this width based on your search bar's width */
+    max-height: 200px; /* Set max height for the dropdown */
+    overflow-y: auto;
+}
+
+/* Spacing between navbar items */
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+/* Adjust the padding for dropdown items */
+.search-results .list-group-item {
+    padding: 0.5rem 1rem;
+}
+
+/* Optional: Add a shadow to the dropdown */
+.search-results {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the dropdown appears right below the search bar */
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+/* Style for the input (search bar) */
+.navbar-nav .form-control {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Optional: Make sure the dropdown aligns with the search bar */
+.search-results {
+    right: 0;
+    left: auto;
+}

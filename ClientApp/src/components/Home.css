@@ -1,0 +1,48 @@
+﻿.menu-container {
+    position: fixed;
+    margin-top: 20px;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 25%; /* Adjust this value to your preferred width */
+    max-width: 300px; /* Optionally set a maximum width */
+    min-width: 200px; /* Optionally set a minimum width */
+    z-index: 1000; /* Keeps the menu on top */
+}
+
+    .menu-container .bg-dark {
+        width: 100%; /* Ensures the inner content uses the full width */
+    }
+
+/* Adjust the main content to account for the fixed sidebar */
+.main-content {
+    margin-left: 25%; /* Adjust this value to match the sidebar width */
+    max-width: 60%; /* Ensures the content doesn't extend beyond the viewport */
+    margin-top: 20px;
+    align-content:center;
+    
+}
+.feedview {
+    background-color: #F5EDED;
+}
+
+.btn-custom {
+    background-color: #E2DAD6;
+}
+
+.custom-tab {
+    background-color: #7FA1C3; /* Custom background color for unselected tabs */
+    color: #ffffff; /* Text color for unselected tabs */
+    border: none;
+}
+
+.custom-tab-active {
+    background-color: #034d6a; /* Custom background color for the active tab */
+    color: #ffffff; /* Text color for the active tab */
+    border: none;
+}
+
+@media screen and (max-width:700px) {
+    .menu-container{
+        display:none;
+    }
+}
